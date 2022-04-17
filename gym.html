@@ -1,0 +1,200 @@
+<!-- Project : Creating a Gym Website Using HTML5 & CSS -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pragati Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family-Baloo+Bhai&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body {
+   
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('https://images.pexels.com/photos/416747/pexels-photo-416747.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+        background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center center;
+        font-family: 'Baloo Bhai', cursive;
+
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 20px;
+        top: 10px;
+
+    }
+
+    .left img {
+        width: 100px;
+         
+        /* to turn the black image in white colour */
+        /* filter: invert(100%); */
+    }
+
+    .left div {
+        line-height: 10px;
+        font-size: 10px;
+        text-align: center;
+        line-height: 19px;
+       
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    }
+
+    .mid {
+        display: block;
+        width: 41%;
+        margin: 24px auto;
+        /*to center an element we do this set display blck set width than set margin (we set as top 12px and in x axis auto)*/
+        /* border: 2px solid green; */
+    }
+
+    .right {
+        position: absolute;
+        right: 15px;
+        top: 35px;
+        display: inline-block;
+       /* border: 2px solid yellow; */
+    } 
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        font-size: 20px;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 5px 6px;
+        text-align: center;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+
+        /* text-decoration: underline; */
+        color: #72e426;
+
+    }
+
+    .btn {
+        margin: 0px 9px;
+        /* top horizontal*/
+        background-color: black;
+        color: white;
+        padding: 6px 13px;
+        font-size: 13px;
+        cursor: pointer;
+        font-family: 'Baloo Bhai', cursive;
+        border-radius: 15px;
+
+    }
+
+    .btn:hover {
+        background-color: rgb(39, 35, 35);
+    }
+
+    .container {
+        /* border: 2px solid rgb(253, 251, 251); */
+        margin: 97px 15px;
+        padding: 45px 16px;
+        width: 45%;
+        border-radius: 10px;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 408px;
+        padding: 2px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 12px;
+        border-radius: 8px;
+        font-family: 'Baloo Bhai', cursive;
+    }
+
+    .container h1 {
+        text-align: center;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .container button {
+        display: block;
+        width: 410px;
+        height: 40px;
+        margin: 20px auto;
+        border-radius: 7px;
+        font-size: 18px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="https://static.vecteezy.com/system/resources/previews/000/656/542/original/fitness-badge-and-logo-good-for-print-design-vector.jpg" alt="">
+           
+        
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone number">
+            </div>
+            <button class="btn">Submit</button>
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>
